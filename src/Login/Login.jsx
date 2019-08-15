@@ -42,18 +42,20 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div className="login">
-                <h1 className="login-title">Login</h1>
-                <form className="form" onSubmit={this.handleSubmit}>
+            <div className="container">
+                <div className="login">
+                    <h1 className="login-title">Nexusflix</h1>
+                    <form className="form" onSubmit={this.handleSubmit}>
 
-                    <label className="form-label">Login</label>
-                    <input className="form-input" type="text" value={this.state.username} onChange={this.handleUserName} />
+                        <label className="form-label">Login</label>
+                        <input className="form-input" type="text" placeholder="Digite seu usuário" value={this.state.username} onChange={this.handleUserName} />
 
-                    <label className="form-label">Senha</label>
-                    <input className="form-input" type="password" value={this.state.password} onChange={this.handlePassword} />
+                        <label className="form-label">Senha</label>
+                        <input className="form-input" type="password" placeholder="Digite sua senha" value={this.state.password} onChange={this.handlePassword} />
 
-                    <button className="form-btn" type="submit">Entrar</button>
-                </form>
+                        <button className="form-btn" type="submit">Entrar</button>
+                    </form>
+                </div>
             </div>
         )
     }
