@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Login from './Login/Login';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(<Login />, document.getElementById('root'));
 
