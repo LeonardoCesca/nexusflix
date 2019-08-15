@@ -21,9 +21,7 @@ export default class Login extends Component {
         this.setState({
             username: event.target.value
         })
-        if (this.username === 'admin') {
-            return true
-        }
+ 
     } 
 
     handlePassword(event) {
