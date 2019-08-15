@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './Login.css'
-import { Link } from 'react-router-dom'
 
 export default class Login extends Component {
     constructor(props) {
@@ -53,7 +52,7 @@ export default class Login extends Component {
                     <label className="form-label">Senha</label>
                     <input className="form-input" type="password" value={this.state.password} onChange={this.handlePassword} />
 
-                    <button type="submit">Entrar</button>
+                    <button className="form-btn" type="submit">Entrar</button>
                 </form>
             </div>
         )
