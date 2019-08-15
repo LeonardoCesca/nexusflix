@@ -1,3 +1,32 @@
-#login {
+.login { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+}
+
+.login-title {
+    cursor: pointer;
+    color: blue;
+}
+
+.login-title::after {
+    content: '';
+   background-color: blue;
+   border: 2px solid transparent;
+   margin-left: 7px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 5px;
 }
