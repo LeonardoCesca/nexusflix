@@ -46,6 +46,7 @@
     margin-bottom: 15px;
     height: 25px;
     text-indent: 5px;
+    outline: none;
 }
 
 .form-label {
@@ -63,4 +64,19 @@
     border-radius: 5px;
     font-weight: bold;
     margin: 0 auto;
+    margin-top: 10px;
+}
+
+.form-btn-error {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 11px 6px;
+}
+
+.form-title-error {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
