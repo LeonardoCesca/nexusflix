@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Login from "./Login/Login";
+import Login from './components/Login'
 import Home from "./components/Home"
+import Logout from "./components/Logout"
 
 const Routes = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={ Login } />
         <Route path="/home" component={ Home } />
+        <Route path="/logout" component={ Logout } />
         <Route path="*" component={() => <h1>Page not found</h1>} />
       </Switch>
     </BrowserRouter>

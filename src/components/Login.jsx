@@ -1,15 +1,24 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import './Login.css'
 
 export default class Login extends Component {
     constructor(props) {
-        super(props);
+        super(props)
+
+        const token = localStorage.getItem("token")
+
+        let logged = true
+
+        if(token == null) {
+            logged = false
+        }
 
         this.state = {
             username: '',
             password: '',
-            verify: false,
             error: '',
+            logged
         };
     
         this.handleUserName = this.handleUserName.bind(this)
@@ -34,7 +43,10 @@ export default class Login extends Component {
 
     handleSubmit(event) {
         if( this.state.username === 'admin' && this.state.password === 'admin') {
-            this.props.history.push("/Home");
+            localStorage.setItem("token", "eahuehueahueaueaheahue")
+            this.setState({ 
+                logged: true
+            });
         }else if(this.state.username !== 'admin' || this.state.password !== 'admin') {
             this.setState({ error: 'usuário ou senha incorretos' });
         }
@@ -47,6 +59,9 @@ export default class Login extends Component {
 
 
     render() {
+        if(this.state.logged) {
+            return <Redirect to="/home" />
+        }
         return (
             <div className="container">
                 <div className="login">
