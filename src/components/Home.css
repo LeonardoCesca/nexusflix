@@ -13,11 +13,13 @@
     padding-top: 20px;
     color: #fff;
     font-family: Arial;
+    position: absolute;
 }
 
 .home__link {
     display: inline-block;
     vertical-align: middle;
+    position: relative;
     background-color: transparent;
     color: #fff;
     border: 0;
