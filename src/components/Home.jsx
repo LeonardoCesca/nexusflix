@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Redirect } from 'react-router-dom'
+import './Home.css'
 
 export default class Admin extends Component {
     constructor(props) {
@@ -22,9 +23,9 @@ export default class Admin extends Component {
             return <Redirect to="/" />
         }
         return (
-            <div>
-                <h1>Admin</h1>
-                <Link to="/logout">Logout</Link>
+            <div className='home'>
+                <h1 className='home__title'>Filmes</h1>
+                <Link to="/logout" className='home__link'>Logout</Link>
             </div>
         )
     }
