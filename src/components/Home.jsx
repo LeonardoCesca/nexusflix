@@ -26,7 +26,6 @@ export default class Admin extends Component {
             .then(response => response.data.results)
             .then((data) => {
                 this.setState({ movies: data })
-                console.log(this.state.movies)
             })
     }
 

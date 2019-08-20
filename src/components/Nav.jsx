@@ -12,7 +12,9 @@ export default class Nav extends Component {
                             <Link to="/profile">Profile</Link>
                         </li>
                         <li className="nav__item">Main Movie</li>
-                        <li className="nav__item">Play Movies</li>
+                        <li className="nav__item">
+                            <Link to="/play">Play Movies</Link>
+                        </li>
                         <li className="nav__item">Metrics</li>
                     </ul>
                 </nav>
