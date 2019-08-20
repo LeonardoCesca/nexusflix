@@ -6,6 +6,12 @@
     background-color: rgba(26, 24, 24, 0.8);
 }
 
+@media (max-width: 765px) {
+    .home {
+        position: fixed;
+    }
+}
+
 .home__title {
     display: flex;
     justify-content: center;
@@ -38,6 +44,27 @@
     height: 31px;
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .home__link {
+        height: 136px;
+        transform: rotate(-90deg);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .home__link {
+        height: 115px;
+        transform: rotate(-90deg);
+    }
+}
+
+@media (width: 425px) {
+    .home__link {
+        height: 84px;
+        transform: rotate(-90deg);
+    }
+}
+
 .home__link::after {
     content: '';
     display: block;
@@ -63,7 +90,7 @@
     overflow-y: scroll;
     align-items: center;
     height: 78vh;
-    width: 68vw;
+    width: 65vw;
     justify-content: center;
 }
 

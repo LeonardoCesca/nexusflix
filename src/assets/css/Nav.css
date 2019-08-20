@@ -6,6 +6,18 @@
     align-self: flex-end;
 }
 
+@media (max-width: 375px) {
+    .header {
+        width: 63px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        width: 75px;
+    }
+}
+
 .nav { 
     display: flex;
     justify-content: space-between;
