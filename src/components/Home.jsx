@@ -35,6 +35,7 @@ export default class Admin extends Component {
         if(this.state.logged === false) {
             return <Redirect to="/" />
         }
+        let i = 0;
         const image = `http://image.tmdb.org/t/p/w185/`
         return (
             <div className='home'>
@@ -43,7 +44,7 @@ export default class Admin extends Component {
                 <div className='home__container'>
                     <div className='home__container--princ'>
                 {this.state.movies.map((movie) => (
-                    <div className='home__pdd'>
+                    <div key={i++} className='home__pdd'>
                     <img src={image + movie.poster_path} alt=""/> 
                     <p className='home__subtitle'>{movie.original_title}</p>
                     </div>

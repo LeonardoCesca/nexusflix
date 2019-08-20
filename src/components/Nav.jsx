@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/css/Nav.css'
 
 export default class Nav extends Component {
@@ -7,7 +8,9 @@ export default class Nav extends Component {
             <header className="header">
                 <nav className="nav">
                     <ul className="nav__list">
-                        <li className="nav__item">Profile</li>
+                        <li className="nav__item">
+                            <Link to="/profile">Profile</Link>
+                        </li>
                         <li className="nav__item">Main Movie</li>
                         <li className="nav__item">Play Movies</li>
                         <li className="nav__item">Metrics</li>
