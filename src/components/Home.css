@@ -62,11 +62,19 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     align-items: center;
-    height: 50vh;
+    height: 78vh;
+    width: 68vw;
     justify-content: center;
 }
 
 .home__pdd {
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+.home__subtitle {
+    width: 185px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
 }

@@ -45,7 +45,7 @@ export default class Admin extends Component {
                 {this.state.movies.map((movie) => (
                     <div className='home__pdd'>
                     <img src={image + movie.poster_path} alt=""/> 
-                    <p>{movie.original_title}</p>
+                    <p className='home__subtitle'>{movie.original_title}</p>
                     </div>
                     ))}
                     </div>
