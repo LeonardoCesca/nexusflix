@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import emoji from '../assets/img/emoji.png'
-import './Logout.css'
+import '../assets/css/Logout.css'
 
 export default class Logout extends Component {
     constructor(props) {

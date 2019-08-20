@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import Nav from '../components/Nav'
-import './Home.css'
+import '../assets/css/Home.css'
 import axios from 'axios';
 
 export default class Admin extends Component {

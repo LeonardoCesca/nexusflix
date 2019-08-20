@@ -14,7 +14,7 @@
 
 .login::after {
     content: '';
-    background: url('../assets/img/wallpaper.png');
+    background: url('../../assets/img/wallpaper.png');
     opacity: 0.5;
     top: 0;
     left: 0;
