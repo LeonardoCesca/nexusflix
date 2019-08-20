@@ -1,0 +1,44 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26, 24, 24, 0.8);
+}
+
+.notFound__back {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "CircularBld",sans-serif;
+    font-size: 13px;
+    padding: 20px 0 0 20px;
+    margin: 0;
+    transition: all .2s ease-out;
+    letter-spacing: .35em;
+    line-height: 2;
+    outline: 0;
+    text-align: center;
+    text-transform: uppercase;
+    height: 31px;
+}
+
+.notFound__back::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50%;
+    transition: all .2s ease-out;
+    background: #fff;
+}
+
+.notFound__back:hover {
+    color: #13d675; 
+}

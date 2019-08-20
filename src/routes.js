@@ -4,6 +4,7 @@ import Login from './components/Login'
 import Home from "./components/Home"
 import Profile from "./components/Profile"
 import Play from "./components/Play"
+import NotFound from "./components/NotFound"
 import Logout from "./components/Logout"
 
 const Routes = () => (
@@ -14,7 +15,7 @@ const Routes = () => (
         <Route path="/logout" component={ Logout } />
         <Route path="/profile" component={ Profile } />
         <Route path="/play" component={ Play } />
-        <Route path="*" component={() => <h1>Page not found</h1>} />
+        <Route path="*" component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );
