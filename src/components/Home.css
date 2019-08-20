@@ -50,3 +50,23 @@
 .home__link:hover {
     color: #13d675;
 }
+
+.home__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__container--princ {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+}
+
+.home__pdd {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
